@@ -30,6 +30,18 @@ function copy(){
     input.value = content.innerHTML;
     input.select();
     document.execCommand("copy");
+    if(input.value !== "")
+        showAlert();
+}
+
+function showAlert(){
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'The text has been copied to the clipboard and pasted automatically.',
+      showConfirmButton: false,
+      timer: 2000
+    });
 }
   
 const textRegex = /^[A-Za-z]+(?:\s+[A-Za-z]+)*$/;
