@@ -221,7 +221,10 @@ button:active{
 
 #input-error{
     position: absolute;
-    left: 40px;
+    left: 0px;
+    color: aliceblue;
+    text-shadow: 0 2px 2px black;
+    font-size: 15px;
 }
 
 input[type="text"]:invalid{
