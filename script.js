@@ -44,7 +44,7 @@ function showAlert(){
     });
 }
   
-const textRegex = /^[A-Za-z]+(?:\s+[A-Za-z]+)*$/;
+const textRegex = /^[A-Za-zñÑ]+(?:\s+[A-Za-zñÑ]+)*$/;
 
 function validateField(){
     const userInput = document.getElementById('encriptedText').value;
