@@ -2,7 +2,8 @@ body{
     overflow-y: hidden;
     margin: 0;
     padding: 0;
-}  
+    font-family: "Open Sans", "Roboto", sans-serif;
+}   
 
 .title{
     position: absolute;
