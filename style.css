@@ -3,7 +3,8 @@ body{
     margin: 0;
     padding: 0;
     font-family: "Open Sans", "Roboto", sans-serif;
-}   
+    font-size: 16px;
+} 
 
 .title{
     position: absolute;
@@ -175,11 +176,11 @@ button:active{
     left: 0;
     right: 0;
 }
-  
+
 #encryptButton{
     margin-right: auto;
 }
-  
+
 #desencryptButton{
     margin: 0 auto;
 }
@@ -191,7 +192,7 @@ button:active{
 #desencriptedText{
     position: absolute;
     top: 0.8%;
-    left: 48%;
+    left: 50.4%;
     resize: none;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.1);
@@ -213,7 +214,7 @@ button:active{
 #encriptedText:focus{
     outline: none;
 }
-  
+
 #desencriptedText::placeholder{
     text-align: center;
     line-height: 240px;
@@ -262,7 +263,7 @@ input[type="text"]:invalid{
     left: 49.4%;
     transform: translate(-50%, -50%);
 }
-  
+
 .wrapper .icon{
     margin: 0 20px;
     text-align: center;
@@ -275,7 +276,7 @@ input[type="text"]:invalid{
     z-index: 2;
     transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-  
+
 .wrapper .icon span{
     display: block;
     height: 60px;
@@ -349,4 +350,26 @@ input[type="text"]:invalid{
 
 .wrapper .linkedin:hover span, .wrapper .linkedin:hover .tooltip, .wrapper .linkedin:hover .tooltip:before{
     background: #2a4e9c;
+}
+
+/* Media Query para pantallas más pequeñas (por ejemplo, dispositivos móviles) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    .container {
+        width: 90%;
+        margin: 100px auto;
+    }
+}
+
+/* Media Query para pantallas medianas (por ejemplo, tabletas) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+    .container {
+        width: 80%;
+        margin: 150px auto;
+    }
 }
