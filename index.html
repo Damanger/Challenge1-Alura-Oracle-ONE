@@ -12,60 +12,62 @@
     <title>Encriptador</title>
 </head>
 <body>
-    <section>
-        <div class="color"></div>
-        <div class="color"></div>
-        <div class="color"></div>
-        <div class="box">
-            <div class="square" style="--i:0;"></div>
-            <div class="square" style="--i:1;"></div>
-            <div class="square" style="--i:2;"></div>
-            <div class="square" style="--i:3;"></div>
-            <div class="square" style="--i:4;"></div>
-            <div class="title">
-                <h1>Encrypter/Desencrypter</h1>
-            </div>
-            <h5>Alura-Oracle Next Education</h5>
-            <div class="container glass">
-                <input type="text" id="encriptedText" placeholder="Enter a text" pattern="^[A-Za-z]+(?:\s+[A-Za-z]+)*$" oninput="validateField(); validateInput();">
-                <div id="input-error" style="display: none;">Enter text without accents only!</div>
-                <textarea name="result" id="desencriptedText" cols="30" rows="16" placeholder="Result" readonly></textarea>
-                <div class="buttons-container">
-                    <button type="button" id="encryptButton" onclick="encrypt()" disabled>Encrypt</button>
-                    <button type="button" id="desencryptButton" onclick="desencrypt()">Desencrypt</button>
-                    <button type="button" id="copyButton" onclick="copy()">Copy Text</button>
+    <main>
+        <section>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="box">
+                <div class="square" style="--i:0;"></div>
+                <div class="square" style="--i:1;"></div>
+                <div class="square" style="--i:2;"></div>
+                <div class="square" style="--i:3;"></div>
+                <div class="square" style="--i:4;"></div>
+                <div class="title">
+                    <h1>Encrypter/Desencrypter</h1>
+                </div>
+                <h5>Alura-Oracle Next Education</h5>
+                <div class="container glass">
+                    <input type="text" id="encriptedText" placeholder="Enter a text" pattern="^[A-Za-z]+(?:\s+[A-Za-z]+)*$" oninput="validateField(); validateInput();">
+                    <div id="input-error" style="display: none;">Enter text without accents only!</div>
+                    <textarea name="result" id="desencriptedText" cols="30" rows="16" placeholder="Result" readonly></textarea>
+                    <div class="buttons-container">
+                        <button type="button" id="encryptButton" onclick="encrypt()" disabled>Encrypt</button>
+                        <button type="button" id="desencryptButton" onclick="desencrypt()">Desencrypt</button>
+                        <button type="button" id="copyButton" onclick="copy()">Copy Text</button>
+                    </div>
+                </div>
+                <div class="credit">
+                    Created By Omar A. Cruz Rmz.
                 </div>
             </div>
-            <div class="credit">
-                Created By Omar A. Cruz Rmz.
+        </section>
+        <footer class="wrapper">
+            <div class="icon facebook">
+               <div class="tooltip">
+                  Facebook
+               </div>
+               <a href="https://www.facebook.com/Damanger" target="_blank"><span><i class="fab fa-facebook"></i></span></a>
             </div>
-        </div>
-    </section>
-    <footer class="wrapper">
-        <div class="icon facebook">
-           <div class="tooltip">
-              Facebook
-           </div>
-           <a href="https://www.facebook.com/Damanger" target="_blank"><span><i class="fab fa-facebook"></i></span></a>
-        </div>
-        <div class="icon instagram">
-           <div class="tooltip">
-              Instagram
-           </div>
-           <a href="https://www.instagram.com/ich_bin_omarrmz/" target="_blank"><span><i class="fab fa-instagram"></i></span></a>
-        </div>
-        <div class="icon github">
-           <div class="tooltip">
-              Github
-           </div>
-           <a href="https://github.com/Damanger" target="_blank"><span><i class="fab fa-github"></i></span></a>
-        </div>
-        <div class="icon linkedin">
-            <div class="tooltip">
-               LinkedIn
+            <div class="icon instagram">
+               <div class="tooltip">
+                  Instagram
+               </div>
+               <a href="https://www.instagram.com/ich_bin_omarrmz/" target="_blank"><span><i class="fab fa-instagram"></i></span></a>
             </div>
-            <a href="https://www.linkedin.com/in/omar-cruzr97/" target="_blank"><span><i class="fab fa-linkedin"></i></span></a>
-         </div>
-    </footer>
+            <div class="icon github">
+               <div class="tooltip">
+                  Github
+               </div>
+               <a href="https://github.com/Damanger" target="_blank"><span><i class="fab fa-github"></i></span></a>
+            </div>
+            <div class="icon linkedin">
+                <div class="tooltip">
+                   LinkedIn
+                </div>
+                <a href="https://www.linkedin.com/in/omar-cruzr97/" target="_blank"><span><i class="fab fa-linkedin"></i></span></a>
+             </div>
+        </footer>
+    </main>
 </body>
 </html>
